@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Uniform</title>
+    <link rel="stylesheet" href="dressStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+<!-- 192.168.29.151 -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"viewBox="0 0 24 24" style="fill: rgb(0,0,0);transform: msFilter" ;><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="contactIndex.html">Contact Us</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo"><a href="index.html">Saigal City</a></li>
+            <li class="hideOnSmallScreen"><a href="index.html">Home</a></li>
+            <li class="hideOnSmallScreen"><a href="activity.html">Activities</a></li>
+            <li class="hideOnSmallScreen"><a href="contactIndex.html">Contact Us</a></li>
+            <li onclick=showSidebar() class="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28"height="28" viewBox="0 0 24 24" style="fill: rgb(0,0,0);transform: msFilter" ;><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+    <div class="headingContainer" style="text-shadow: 0 0 30px white;">
+        <img style="position: relative; bottom: 40px;" src="schoolLogo.png" alt="">
+        <h2 class="h21">Saigal City Montessori Junior High School</h2>
+        <h2 id="h22">Start where you are. Use what you have. Do what you can.</h2>
+    </div>
+
+        <div class="container1">
+            <h1 class="txt">Boys Uniform<hr></h1>
+            <div class="imageSlider1"></div>
+        </div>
+        <div class="container2">
+            <h1 class="txt">Boys House Uniform<hr></h1>
+            <div class="imageSlider2"></div>
+        </div>
+        <div class="container3">
+            <h1 class="txt">Girls Uniform<hr></h1>
+            <div class="imageSlider3"></div>
+        </div>
+        <div class="container4">
+            <h1 class="txt">Girls House Uniform<hr></h1>
+            <div class="imageSlider4"></div>
+        </div>
+        
+
+        <footer>
+            <div class="footer-container">
+                <img src="schoolLogo.png" class="school-logo">
+                <div class="message">Aarya Nagar, NCC ofice, Sitapur, Uttar Pradesh, India</div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/saigalschool/"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/saigalcitymontessori/"><img src="insta.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/SaigalJr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                            src="x.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Saigal City Montessori Junior High School. All rights reserved.</p>
+        </footer>
+</body>
+
+</html>
